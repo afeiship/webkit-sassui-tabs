@@ -1,13 +1,37 @@
 /*webkit-sassui-tabs Start*/
-@mixin webkit-sassui-tabs($inItemPrefix:'.item'){
+@mixin webkit-sassui-tabs-table($inItemPrefix:'.item') {
   //Your mixin code goes here.
   display: table;
-  width:100%;
-  >#{$inItemPrefix}{
+  width: 100%;
+
+  > #{$inItemPrefix} {
     display: table-cell;
     text-align: center;
     vertical-align: middle;
     white-space: nowrap;
+  }
+}
+@mixin webkit-sassui-tabs-flex($inCount,$inItemPrefix:'.item') {
+  display: -webkit-box;
+  display: flex;
+
+  > #{$inItemPrefix} {
+    width: percentage(1/$inCount);
+    -webkit-box-pack: center;
+    justify-content: center;
+    display: -webkit-box;
+    display: flex;
+    box-sizing: border-box;
+
+    > span {
+      border-bottom: 2px solid transparent;
+    }
+
+    &[data-active=true] {
+      > span {
+        border-bottom-color: #f60;
+      }
+    }
   }
 }
 /*webkit-sassui-tabs End*/
