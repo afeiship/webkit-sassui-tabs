@@ -1,0 +1,29 @@
+{
+  "name": "webkit-sassui-tabs",
+  "description": "Webkit sass ui module for tabs.",
+  "main": [
+    "dist/webkit-sassui-tabs.css",
+    "dist/webkit-sassui-tabs.scss"
+  ],
+  "authors": [
+    "afei"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "webkit",
+    "cssui",
+    "tabs"
+  ],
+  "homepage": "https://github.com/afeiship/webkit-cssui-absolute-center",
+  "moduleType": [
+    "amd"
+  ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "src"
+  ]
+}

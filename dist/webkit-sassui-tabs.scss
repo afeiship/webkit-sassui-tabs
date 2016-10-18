@@ -1,0 +1,12 @@
+/*webkit-sassui-tabs Start*/
+@mixin webkit-sassui-tabs($inItemPrefix:'.item'){
+  //Your mixin code goes here.
+  display: table;
+  width:100%;
+  >#{$inItemPrefix}{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+  }
+}
+/*webkit-sassui-tabs End*/

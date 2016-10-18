@@ -1,0 +1,17 @@
+/*webkit-sassui-tabs Start*/
+/*webkit-sassui-tabs End*/
+.test-webkit-sassui-tabs {
+  display: table;
+  width: 100%;
+  height: 40px;
+  background: #f2f2f2;
+  color: #333;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.test-webkit-sassui-tabs > .item {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
